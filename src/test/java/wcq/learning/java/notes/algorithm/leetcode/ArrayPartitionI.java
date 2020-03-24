@@ -1,4 +1,4 @@
-package wcq.learning.java.notes.leetcode;
+package wcq.learning.java.notes.algorithm.leetcode;
 
 /**
  * 题目：https://leetcode-cn.com/problems/array-partition-i/

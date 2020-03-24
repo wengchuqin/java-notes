@@ -1,4 +1,4 @@
-package wcq.learning.java.notes.leetcode;
+package wcq.learning.java.notes.algorithm.leetcode;
 
 import org.junit.Assert;
 import org.junit.Test;

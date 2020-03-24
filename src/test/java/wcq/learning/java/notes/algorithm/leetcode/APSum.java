@@ -1,4 +1,4 @@
-package wcq.learning.java.notes.leetcode;
+package wcq.learning.java.notes.algorithm.leetcode;
 
 import org.junit.Test;
 import org.slf4j.Logger;

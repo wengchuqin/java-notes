@@ -1,4 +1,4 @@
-package wcq.learning.java.notes.leetcode.common;
+package wcq.learning.java.notes.algorithm.leetcode.common;
 
 import java.util.ArrayList;
 import java.util.List;

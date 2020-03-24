@@ -1,8 +1,8 @@
-package wcq.learning.java.notes.leetcode;
+package wcq.learning.java.notes.algorithm.leetcode;
 
 import org.junit.Assert;
 import org.junit.Test;
-import wcq.learning.java.notes.leetcode.common.ListNode;
+import wcq.learning.java.notes.algorithm.leetcode.common.ListNode;
 
 import java.util.Arrays;
 

@@ -1,8 +1,8 @@
-package wcq.learning.java.notes.leetcode;
+package wcq.learning.java.notes.algorithm.leetcode;
 
 import org.junit.Assert;
 import org.junit.Test;
-import wcq.learning.java.notes.leetcode.common.TreeNode;
+import wcq.learning.java.notes.algorithm.leetcode.common.TreeNode;
 
 /**
  * 题目：https://leetcode-cn.com/problems/path-sum/
