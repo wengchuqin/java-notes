@@ -9,7 +9,7 @@ import java.util.Arrays;
  * @author: wengchuqin
  * @create: 2020-04-01 22:18
  */
-public class QuickSort {
+public class QuickSort implements Sort {
     @Test
     public void test() {
         int arr[] = {12, 11, 13, 5, 6, 7};
@@ -72,6 +72,7 @@ public class QuickSort {
         Assert.assertArrayEquals(new int[]{1, 2}, arr);
     }
 
+    @Override
     public void sort(int arr[]) {
         quickSort(arr, 0, arr.length);
     }

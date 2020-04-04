@@ -12,7 +12,7 @@ import java.util.Arrays;
  * @author: wengchuqin
  * @create: 2020-03-24 13:03
  */
-public class HeapSort {
+public class HeapSort implements Sort{
     @Test
     public void test() {
         int arr[] = {12, 11, 13, 5, 6, 7};
@@ -23,6 +23,7 @@ public class HeapSort {
         Assert.assertArrayEquals(new int[]{5, 6, 7, 11, 12, 13}, arr);
     }
 
+    @Override
     public void sort(int arr[]) {
         int n = arr.length;
 
