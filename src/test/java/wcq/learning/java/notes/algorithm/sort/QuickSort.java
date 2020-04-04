@@ -6,6 +6,7 @@ import org.junit.Test;
 import java.util.Arrays;
 
 /**
+ * 参考：https://www.geeksforgeeks.org/quick-sort/
  * @author: wengchuqin
  * @create: 2020-04-01 22:18
  */
@@ -74,40 +75,39 @@ public class QuickSort implements Sort {
 
     @Override
     public void sort(int arr[]) {
-        quickSort(arr, 0, arr.length);
+        quickSort(arr, 0, arr.length - 1);
     }
 
-    private void quickSort(int[] arr, int start, int end) {
-        if (start < end) {
-            int q = partition(arr, start, end);
-            quickSort(arr, start, q);
-            quickSort(arr, q + 1, end);
+    void quickSort(int arr[], int low, int high) {
+        if (low < high) {
+            /* pi is partitioning index, arr[pi] is
+              now at right place */
+            int pi = partition(arr, low, high);
+
+            // Recursively sort elements before
+            // partition and after partition
+            quickSort(arr, low, pi - 1);
+            quickSort(arr, pi + 1, high);
         }
     }
 
-    /**
-     * 把数组分成两部分，左边部分的值 比 右边部分的值 小。 返回中标。
-     *
-     * @param arr
-     * @param start
-     * @param end
-     * @return
-     */
-    private int partition(int[] arr, int start, int end) {
-        int p = end - 1;
-        int p1 = start;
-        int p2 = start;
-        while (p2 < p) {
-            if (arr[p2] < arr[p]) {
-                change(arr, p1, p2);
-                p1++;
-                p2++;
-            } else {
-                p2++;
+    int partition(int arr[], int low, int high) {
+        int pivot = arr[high];
+        int i = low; // index of smaller element
+        for (int j = low; j < high; j++) {
+            // If current element is smaller than the pivot
+            if (arr[j] < pivot) {
+                // swap arr[i] and arr[j]
+                change(arr, i, j);
+
+                i++;
             }
         }
-        change(arr, p1, p);
-        return p1;
+
+        // swap arr[i+1] and arr[high] (or pivot)
+        change(arr, i, high);
+
+        return i;
     }
 
     private void change(int[] arr, int p1, int p2) {
