@@ -5,6 +5,8 @@ import org.junit.Test;
 
 import java.util.Arrays;
 
+import static wcq.learning.java.notes.algorithm.sort.Helper.change;
+
 /**
  * Java program for implementation of Heap Sort
  * 参考: https://www.geeksforgeeks.org/heap-sort/
@@ -34,9 +36,7 @@ public class HeapSort implements Sort{
         // One by one extract an element from heap
         for (int i = n - 1; i >= 0; i--) {
             // Move current root to end
-            int temp = arr[0];
-            arr[0] = arr[i];
-            arr[i] = temp;
+            change(arr, 0, i);
 
             // call max heapify on the reduced heap
             heapify(arr, i, 0);

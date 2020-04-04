@@ -6,4 +6,5 @@ package wcq.learning.java.notes.algorithm.sort;
  */
 public interface Sort {
     void sort(int arr[]);
+
 }

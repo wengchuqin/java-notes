@@ -5,6 +5,8 @@ import org.junit.Test;
 
 import java.util.Arrays;
 
+import static wcq.learning.java.notes.algorithm.sort.Helper.change;
+
 /**
  * 参考：https://www.geeksforgeeks.org/quick-sort/
  * @author: wengchuqin
@@ -110,9 +112,4 @@ public class QuickSort implements Sort {
         return i;
     }
 
-    private void change(int[] arr, int p1, int p2) {
-        int tmp = arr[p1];
-        arr[p1] = arr[p2];
-        arr[p2] = tmp;
-    }
 }
