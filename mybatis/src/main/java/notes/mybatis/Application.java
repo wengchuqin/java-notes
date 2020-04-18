@@ -1,5 +1,6 @@
 package notes.mybatis;
 
+import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
@@ -8,6 +9,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @create: 2020-04-18 16:58
  */
 @SpringBootApplication
+@MapperScan("notes.mybatis")
 public class Application {
     public static void main(String[] args) {
         SpringApplication.run(Application.class, args);
