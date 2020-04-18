@@ -14,6 +14,18 @@ import java.util.stream.Collectors;
  */
 public class RobotInAGridLCCI {
     @Test
+    public void test0() {
+        int[][] grid = {
+                {0, 0, 0, 0, 0},
+                {0, 1, 0, 1, 1},
+                {1, 0, 0, 0, 0},
+                {1, 0, 0, 0, 0},
+                {0, 0, 0, 0, 0}
+        };
+        System.out.println(new Solution().pathWithObstacles(grid));
+    }
+
+    @Test
     public void test() {
         int[][] grid = {
                 {0, 0, 0},
