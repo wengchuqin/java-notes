@@ -1,4 +1,4 @@
-package notes.algorithm.lcci;
+package notes.algorithm.lcci.c01;
 
 import org.junit.Assert;
 import org.junit.Test;
