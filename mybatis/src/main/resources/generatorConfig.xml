@@ -4,9 +4,9 @@
 <generatorConfiguration>
     <context id="demo" targetRuntime="MyBatis3DynamicSql">
         <jdbcConnection driverClass="com.mysql.jdbc.Driver"
-                        connectionURL="jdbc:mysql://10.24.76.234:5002/sync_from_prod?autoReconnect:true;useUnicode:true;characterEncoding:UTF-8"
-                        userId="sync_from_prod"
-                        password="PyRZYb">
+                        connectionURL="jdbc:mysql://xxx:5002/xxx?autoReconnect:true;useUnicode:true;characterEncoding:UTF-8"
+                        userId="xxx"
+                        password="xxx">
         </jdbcConnection>
         <javaTypeResolver>
             <property name="forceBigDecimals" value="false"/>
