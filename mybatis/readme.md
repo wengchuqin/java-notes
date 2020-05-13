@@ -1,2 +1,0 @@
-- 使用mybatis-spring-boot-starter，减少配置数量
-- spring.datasource配置数据源
